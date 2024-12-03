@@ -1,12 +1,22 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
-import Main from "./pages/Main";
-
+import Navbar from "./Navbar.jsx";
+import Login from "./pages/Login.jsx";
+import Game from "./pages/Game.jsx";
+import UserInfo from "./pages/User-info.jsx";
+import SignUp from "./pages/Sign-up.jsx";
 
 function App() {
   return (
     <>
-     <Main></Main>
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Game />} />
+          <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/user-info" element={<UserInfo />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

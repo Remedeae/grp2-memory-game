@@ -1,4 +1,5 @@
-import "../components/Cards.css";
+import "../styles/Cards.css";
+
 function Cards() {
     return (
     <>

@@ -1,6 +1,5 @@
+import "../styles/Game.css"
 
-
-import "../components/Main.css"
 function Score() {
     return (
     <>

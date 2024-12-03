@@ -1,8 +1,8 @@
-import "../components/Main.css";
+import "../styles/Game.css";
 import Cards from "../components/Cards.jsx";
 import Score from "../components/Score.jsx";
 
-function Main() {
+function Game() {
     return (
         <>
             <div className="main">
@@ -26,4 +26,5 @@ function Main() {
 
 }
 
-export default Main;
+export default Game;
+
